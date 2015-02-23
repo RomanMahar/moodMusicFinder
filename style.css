@@ -1,0 +1,129 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 20px;
+  background: #333;
+}
+
+main {
+  color: #fff;
+  padding: 0 10%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden; /*clearfix*/
+}
+
+h1 {
+  margin-top: 0;
+}
+.buttons {
+  margin-bottom: 60px;
+}
+div.btn {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+
+div.btn a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background: rgba(255,255,255,0.4);
+  font-family: "Raleway";
+  letter-spacing: 2px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+div.btn a.selected {
+  background: rgba(255,80,25,0.6);
+}
+
+p.artist {
+  font-style: italic;
+}
+
+.piece {
+  width: 100%;
+  clear: both;
+}
+.piece img {
+  float: left;
+  width: 33.3%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border: solid 5px #fff;
+}
+
+div.piece:first-child {
+  font-style: italic;
+  color: #ff3912;
+}
+
+/*slider */
+h3 {
+  color: white;
+  font-family: "Raleway";
+  letter-spacing: 1.5px;
+  font-weight: 300;
+}
+
+div.rangeSelector
+{
+    margin: 2% 0;
+}
+.values
+{
+    padding: 5px 7px;
+    background: #fe4730;
+    color: white;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.ui-slider
+{
+    height: 7px;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.ui-slider .ui-slider-range
+{
+    top: 1px;
+    height: 5px;
+    background: rgba(255,255,255,1);
+    position: absolute;
+}
+.ui-slider .ui-slider-handle
+{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #222;
+    border-radius: 100%;
+    background: rgba(255,255,255,1);
+    position: absolute;
+    top: -5px;
+    margin-left: -6px;
+}
+
+.ui-slider .ui-slider-handle:hover,
+.ui-slider .ui-slider-handle:active
+{
+    box-shadow: 0 0 5px #fe4730;
+    outline: none;
+}
+
+
+/*End slider from js fiddle*/

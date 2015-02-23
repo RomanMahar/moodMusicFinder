@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>last.fm api test | spotify</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+  <header>
+  <h1>How are you?</h1>
+  <div class="buttons">
+    <div class="btn"><a href="#" class="moodbtn" id="happy">happy</a></div>
+    <div class="btn"><a href="#" class="moodbtn" id="angry">angry</a></div>
+    <div class="btn"><a href="#" class="moodbtn" id="sad">sad</a></div>
+  </div>
+  <div class="metrics">
+    <h3>Danceability</h3>
+    <div class="rangeSelector" id="Danceability">
+      <div class="values">initializing...</div>
+      <div class="range"></div>
+    </div>
+    <h3>Energy</h3>
+    <div class="rangeSelector" id="Energy">
+      <div class="values">initializing...</div>
+      <div class="range"></div>
+    </div>
+    <h3>Presence of lyrics</h3>
+    <div class="rangeSelector" id="Speechiniess">
+      <div class="values">initializing...</div>
+      <div class="range"></div>
+    </div>
+  </div>
+  <button class="submit">submit</button>
+  
+  </header>
+
+  <main>
+    <div id="artwork"></div>
+
+  </main>
+
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+  <script src="slider.js"></script>
+  <script src="app.js"></script>
+<!--  <script src="jQuery.JamCity.js"></script> -->
+</div>
+</body>
+</html>
+
+<!-- 
+https://www.rijksmuseum.nl/api/en/collection/?key=bhVzgRq2&format=json&q=autumn
+ -->
